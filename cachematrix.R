@@ -1,6 +1,10 @@
 ## Make a special version of matrix that keeps a cache
 ## version of the inverse for the matrix. This improves 
 ## the performance.
+## usage:
+##  m<- matrix(c(1,2,3,4), nrow=2, ncol=2)
+##  > cm <- makeCacheMatrix(m)
+##  > cacheSolve(cm)
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
